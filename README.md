@@ -18,4 +18,16 @@ sudo nano /etc/crontab
 @reboot root /home/xtreamcodes/iptv_xtream_codes/start_services.sh
 
 
-PID Monitor Fix
+5. PID Monitor Fix
+''''
+wget "https://streaming-servers.com/downloads/pid_monitor.zip" -O /tmp/pid_monitor.zip -o /dev/null && unzip /tmp/pid_monitor.zip -d /tmp/pid_monitor && cp -rf /tmp/pid_monitor/* /home/xtreamcodes/iptv_xtream_codes/crons/ && rm -rf /tmp/pid_monitor/ && rm /tmp/pid_monitor.zip && sudo chown -R xtreamcodes:xtreamcodes /home/xtreamcodes/ && sudo chmod 777 -R /home/xtreamcodes/iptv_xtream_codes/crons
+''''
+
+
+6. Login with User: admin and Psaaword: admin
+
+
+7. Go to Panel Settings > Backups > Update Tables
+
+
+8. Go to Servers and set the Network Interface Name (you can get this wiith the Linux command:  ifconfig  ) and set it in the Panel under Server Network Interface
